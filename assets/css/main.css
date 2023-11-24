@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #343A40;
+  height: 76px;
+  width: 100%;
+}
+nav .homeListMain {
+  width: 80%;
+  height: 100%;
+}
+nav .homeListMain .homeList {
+  width: 70%;
+  height: 100%;
+}
+nav .homeListMain .homeList .homeListUl {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi {
+  position: relative;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi a {
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+  color: #ADB6C1;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi a:hover {
+  color: white;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown {
+  display: none;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul li {
+  cursor: pointer;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul li:hover {
+  color: #7CBD1E;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown {
+  display: block;
+  position: absolute;
+  color: rgb(62, 68, 73);
+  top: 110%;
+  width: 220%;
+  background-color: white;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu {
+  position: relative;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu ul {
+  list-style: none;
+  color: rgb(62, 68, 73);
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu:hover .subMenuDropdown {
+  display: block;
+  position: absolute;
+  top: -50%;
+  right: -100%;
+  width: 100%;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenuDropdown {
+  display: none;
+}
+nav .homeListMain .homeList .btnAll {
+  gap: 5px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+nav .homeListMain .homeList .btnAll .register {
+  background-color: #343A40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 76%;
+  width: 48%;
+  color: white;
+  border: 1.5px solid #7CBD1E;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+nav .homeListMain .homeList .btnAll .register:hover {
+  background-color: #7CBD1E;
+}
+nav .homeListMain .homeList .btnAll .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 75%;
+  width: 39%;
+  background-color: #7CBD1E;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+nav .homeListMain .homeList .btnAll .login:hover {
+  background-color: #669c19;
+}
